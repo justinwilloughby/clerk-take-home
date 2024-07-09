@@ -78,6 +78,19 @@ I really admire well thought out, beautiful UI/UX. Clerk does this so well, but 
 
 There are also a few Clerk features that I think would be great adds. Adding a second or third social provider (maybe Apple and Facebook) would help give users more options and potentially improve conversion. Adding MFA and/or passkeys would help boost the security of the application. MFA might get more adoption now, but I'm a big fan of passkeys so I would add them as an option. The more we move away from passwords, towards phishing resistant forms of authentication, the better. Account protection is on by default so you get brute force protections, but turning on bot protection in production to better protect sign ups would help keep your directory cleaner.
 
+## Run Locally
+
+1. `git clone` the repo
+2. `cd` into the repo
+3. `npm install`
+4. Setup a new Clerk App in the Clerk Dashboard with email and Google authentication options
+5. Create `.env.local` with your Clerk keys
+6. Add `public_metadata` to the session token as `metadata` in the Clerk Dashboard
+![Session](screenshots/session.png "Session")
+7. Enable organizations for your app in the Clerk Dashboard
+![Org](screenshots/org.png "Org")
+8. `npm run dev`
+
 ## Screenshots
 
 ![Clerk Auth Flow 1](screenshots/1.png "Clerk Auth Flow 1")
