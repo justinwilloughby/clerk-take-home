@@ -103,3 +103,14 @@ There are also a few Clerk features that I think would be great adds. Adding a s
 ![Clerk Auth Flow 7](screenshots/7.png "Clerk Auth Flow 7")
 ![Clerk Auth Flow 8](screenshots/8.png "Clerk Auth Flow 8")
 ![Clerk Auth Flow 9](screenshots/9.png "Clerk Auth Flow 9")
+
+## User List Extension
+
+After reviewing the solution with the team, I was asked to create an extension that adds a page, reads the users from the directory and displays the emails on the screen.
+
+I created the user-list page and used a server action and the Clerk client to get a list of users. It reads the users using the default page size of 10, and loops until it gets all the users. I could increse the default page size because I only have 27 users in my directory, but I wanted to showcase the pagination. The server action is called from a button in my client component and the results are returned and saved in state so the page rerenders with the list of user email addresses. I do most of the processing in the backend server action, sending the string list of emails to the client.
+
+Screenshots:
+
+![UserList 1](screenshots/userlist1.png "UserList 1")
+![UserList 2](screenshots/userlist2.png "UserList 2")

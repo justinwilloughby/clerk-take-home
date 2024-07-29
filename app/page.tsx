@@ -33,6 +33,7 @@ export default async function Home() {
             <Link href="/onboarding" className="text-blue-500">/onboarding</Link>
             <Link href="/organization" className="text-blue-500">/organization</Link>
             <Link href="/organization-profile" className="text-blue-500">/organization-profile</Link>
+            <Link href="/user-list" className="text-blue-500">/user-list</Link>
           </div>
         </div>
       </ClerkLoaded>
